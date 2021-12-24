@@ -1,11 +1,9 @@
 class Solution {
 public:
-    int binary_search(vector<int>& vc, int len, int tmp)
-    {
+    int binary_search(vector<int>& vc, int len, int tmp) {
         int left = 1;
         int right = len;
-        while (left <= right)
-        {
+        while (left <= right) {
             int mid = (left + right) / 2;
             if (vc[mid] <= tmp)
                 left = mid + 1;
